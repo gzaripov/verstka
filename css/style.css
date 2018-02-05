@@ -1,14 +1,40 @@
-body {
-  font-size: 22px;
-  line-height: 32px;
+html {
+  box-sizing: border-box;
 }
 
-header {
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 22px;
+  line-height: 34px;
+}
+
+header,
+nav {
   background-color: #fd739c;
   color: white;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 h1,
 h2 {
   font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  margin-top: 120px;
+  line-height: normal;
+}
+
+header {
+  padding-bottom: 80px;
+}
+
+#whoami {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
