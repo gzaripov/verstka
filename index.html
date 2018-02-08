@@ -5,70 +5,290 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Курс по фронтенду 1.5</title>
+    <title>Uber Eats</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="#whoami">Кто я такой</a>
-        </nav>
-        <h1>
-            Курс по фронтенду.
-            <br/> Версия 1.5
-        </h1>
-        <span>Премиальный. Бутиковый. Практический.</span>
-    </header>
     <main>
-        <section id="whoami">
-            <h2>Кто я такой</h2>
-            <p>Меня зовут Евгений Родионов, и я учу людей фронтэнду.
-            </p>
-            <p>
-                Я руководил разработкой Рублёвки.ру и обучил команду, которая сейчас работает в Тинькофф,
-                Рокетбанке, Ростелекоме и немецком Kairion.
-            </p>
-            <p>
-                Я веду
-                <a href="https://erodionov.ru/frontend-feb">канал про фронтенд в Телеграме</a>, пишу
-                <a href="https://medium.com/@evgeny.rodionov">статьи на Медиуме</a> и выпускаю
-                <a href="https://www.youtube.com/channel/UCmhLAusKEdo8JF8WnU-KhFA">5-минутные видео на Ютубе.</a>
-            </p>
-            <p>
-                Хочу, чтобы в России были крутые интефейсы. Я взращиваю крутых ребят, с которыми
-                готов работать сам.
-            </p>
-            <aside>
-                Спроси у Жени, Ильи, Кости, Люды и Лизы.
-            </aside>
+        <nav class="navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="./img/logo.svg">
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-5 delivery">
+                        <div class="origin btn">
+                            <span>ASAP</span>
+                        </div>
+                        <div class="to">
+                            to
+                        </div>
+                        <div class="dest box">
+                            <div class="location">
+                                <img src="./img/location.svg">
+                            </div>
+                            <input type="text" value="ul. Bolshaya Dmitrovka, 22">
+                        </div>
+                    </div>
+                    <div class="col-4" style="justify-content: flex-end;">
+                        <div class="btns">
+                            <div class="btn sign-in">Sign In</div>
+                            <div class="btn register">Register</div>
+                        </div>
+                        <div class="basket">
+                            <img src="./img/basket.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header id="rest">
+            <div class="rest-photo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="rest">
+                                <h1 class="name">Трактир «Пушкин»</h1>
+                                <div class="bottom">
+                                    <div class="rest-info">
+                                        <span class="currency">₽₽₽</span>
+                                        <span class="divider">•</span>
+                                        <span class="food-kind">Европейская</span>
+                                    </div>
+                                    <div class="delivery-time">
+                                        <span>45 - 50 Min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="menu">
+            <div class="menu">
+                <div class="navigation">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <nav>
+                                    <a class="selected">Закуски</a>
+                                    <a>Салаты</a>
+                                    <a>Супы</a>
+                                    <a>Горячие блюда</a>
+                                    <a>Гарниры</a>
+                                    <a>Десерты</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Закуски</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="info">
+                                        <div class="title">Сельдь на бородинском хлебе</div>
+                                        <div class="subtitle">С яйцом и огурцом</div>
+                                        <div class="price">240 ₽</div>
+                                    </div>
+                                    <div class="photo" style="background-image: url('./img/dish/fish.png');">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="info">
+                                        <div class="title">Соленья ассорти</div>
+                                        <div class="subtitle"></div>
+                                        <div class="price">320 ₽</div>
+                                    </div>
+                                    <div class="photo" style="background-image: url('./img/dish/pickles.png');">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="info">
+                                        <div class="title">Грибы маринованные</div>
+                                        <div class="subtitle"></div>
+                                        <div class="price">300 ₽</div>
+                                    </div>
+                                    <div class="photo" style="background-image: url('./img/dish/mushrooms.png');">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="info">
+                                        <div class="title">Сало домашнее с горчицей</div>
+                                        <div class="subtitle"></div>
+                                        <div class="price">320 ₽</div>
+                                    </div>
+                                    <div class="photo" style="background-image: url('./img/dish/fat.png');">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="info">
+                                        <div class="title">Малосольная семга</div>
+                                        <div class="subtitle"></div>
+                                        <div class="price">390 ₽</div>
+                                    </div>
+                                    <div class="photo" style="background-image: url('./img/dish/salmon.png');">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="info">
+                                        <div class="title">Язык говяжий с хреном</div>
+                                        <div class="subtitle"></div>
+                                        <div class="price">350 ₽</div>
+                                    </div>
+                                    <div class="photo" style="background-image: url('./img/dish/beef_tongue.png');">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        <section id="changelog">
-            <h2>Ченджлог к версии 1.5</h2>
-            <aside>
-                <p>
-                    Я провел 4 потока и понял узкие места курса. Да, люди добивались своих целей — находили
-                    работу или запускают продукты, но сила трения была высокой, so
-                    every update of our Facebook app includes improvements for speed
-                    and reliability.
-                    <br/> Bug fixes and performance improvements.
-                </p>
-            </aside>
-            <h3>Было</h3>
-            <ul>
-                <li>материалы готовились во время курса;</li>
-                <li>мало теории;</li>
-                <li>нестабильная программа;</li>
-            </ul>
-            <h3>Стало</h3>
-            <ul>
-                <li>🔥 макеты и АПИ сделаны до начала курса;</li>
-                <li>🔥 новые объясняющее видео;</li>
-                <li>🔥 программа не будет прыгать на ходу;</li>
-            </ul>
-        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="logo">
+                            <img src="./img/big_logo.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="divider"></div>
+                    </div>
+                </div>
+                <div class="links">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="language-selector">
+                                <div class="icon">
+                                    <img src="./img/world.svg">
+                                </div>
+                                <div class="language">
+                                    english
+                                </div>
+                                <div class="arrow">
+                                    <img src="./img/arrow-down.svg">
+                                </div>
+                            </div>
+                            <div class="social">
+                                <div class="tag">
+                                    <span class="hash">#</span>
+                                    <span>UberEats</span>
+                                </div>
+                                <div>
+                                    <div class="icon">
+                                        <img src="./img/facebook.svg">
+                                    </div>
+                                    <div class="icon">
+                                        <img src="./img/twitter.svg">
+                                    </div>
+                                    <div class="icon">
+                                        <img src="./img/instagram.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-3">
+                            <div class="option">
+                                <a href="">About UberEats</a>
+                            </div>
+                            <div class="option">
+                                <a href="">Become a Delivery Partner</a>
+                            </div>
+                            <div class="option">
+                                <a href="">Become a Restaurant Partner</a>
+                            </div>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-3">
+                            <div class="option">
+                                <a href="">See all cities</a>
+                            </div>
+                            <div class="option">
+                                <a href="">Pricing</a>
+                            </div>
+                            <div class="option">
+                                <a href="">Help</a>
+                            </div>
+                            <div class="option">
+                                <a href="">FAQs</a>
+                            </div>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="divider"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="download">
+                            <div class="app-store">
+                                <img src="./img/app_store.svg">
+                            </div>
+                            <div class="google-play">
+                                <img src="./img/google_play.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="divider"></div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-4">
+                            <a href="">© 2017 Uber Technologies Inc.</a>
+                        </div>
+                        <div class="col-4">
+                            <a href="">Privacy</a>
+                        </div>
+                        <div class="col-4">
+                            <a href="">Terms</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="scroll-top-arrow"></div>
     </main>
 </body>
 

@@ -1,0 +1,295 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #1d1d1d;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.navbar {
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}
+
+.navbar .row {
+  height: 72px;
+}
+
+.navbar .row div {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  height: 40px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.delivery .box {
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  height: 40px;
+  padding: 8px 12px;
+}
+
+.delivery .to {
+  font-weight: 300;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.delivery .dest {
+  width: 292px;
+}
+
+.delivery .dest .location {
+  margin-right: 12px;
+}
+
+.delivery .dest input {
+  width: 240px;
+  border: none;
+}
+
+.btns {
+  font-size: 500;
+}
+
+.register {
+  border: none;
+  background-color: #262626;
+  color: white;
+  margin: 0 16px;
+}
+
+.basket {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.rest-photo {
+  background-image: url("../img/rest_photo.png");
+  background-size: cover;
+  background-position: center;
+  height: 364px;
+}
+
+.rest {
+  min-height: 204px;
+  margin-top: 80px;
+  background-color: white;
+  box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+  padding: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rest > .name {
+  font-weight: 400;
+  margin: 0;
+  font-size: 36px;
+}
+
+.rest .delivery-time {
+  border-radius: 16px;
+  color: white;
+  background-color: #262626;
+  padding: 8px 16px;
+}
+
+.rest-info {
+  font-size: 14px;
+  color: #626262;
+}
+
+.rest .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .navigation {
+  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+  box-sizing: content-box;
+}
+
+.menu nav {
+  line-height: 80px;
+  max-height: 80px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.menu nav a {
+  color: #626262;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.menu nav a.selected {
+  color: #327430;
+}
+
+.menu nav a:hover {
+  border-bottom: 2px solid #327430;
+}
+
+.menu .header h2 {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 56px 0 32px;
+}
+
+.menu .card {
+  height: 160px;
+  background-color: rgba(117, 117, 117, 0.04);
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .photo {
+  margin: -1px -1px -1px 0;
+  border-radius: 2px;
+  width: 170px;
+}
+
+.card .info {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.card .subtitle {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #626262;
+}
+
+.card .price {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+footer {
+  background-color: #262626;
+  color: white;
+}
+
+footer .logo {
+  padding: 56px 0 40px;
+}
+
+footer .divider {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+footer .links {
+  padding: 32px 0 48px;
+}
+
+.language-selector {
+  display: flex;
+  background-color: #3b3b3b;
+  border-radius: 2px;
+  align-items: center;
+  height: 40px;
+  cursor: pointer;
+}
+
+.language-selector .icon {
+  margin-left: 24px;
+}
+
+.language-selector .language {
+  text-transform: uppercase;
+  margin-left: 18px;
+}
+
+.language-selector .arrow {
+  margin-left: auto;
+  margin-right: 8px;
+}
+
+footer .download {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+footer .social .tag {
+  padding: 35px 0 15px;
+}
+
+footer .social .hash {
+  color: #327430;
+  margin-right: -3px;
+}
+
+footer .social .icon {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+footer .option a,
+footer .copyright a {
+  text-decoration: none;
+  font-size: 13px;
+  color: white;
+}
+
+footer .option {
+  margin-bottom: 26px;
+}
+
+footer .copyright a {
+  padding: 40px 0 40px;
+  display: block;
+}
+
+footer .download .app-store {
+  margin-right: 20px;
+}
+
+footer .download .google-play {
+  margin-left: 20px;
+}
+
+footer .download footer .copyright {
+  padding: 40px 0;
+}
+
+.scroll-top-arrow {
+  height: 80px;
+  width: 80px;
+  position: fixed;
+  background-color: #59bd5a;
+  background-image: url("../img/arrow_top.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  right: 16px;
+  bottom: 24px;
+}
