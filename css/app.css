@@ -35,17 +35,24 @@ input:focus {
   height: 72px;
 }
 
-.navbar .row div {
+.navbar .flex {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .btn {
+  display: flex;
+  align-items: center;
   border: 1px solid #e0e0e0;
   border-radius: 2px;
   height: 40px;
   padding: 8px 12px;
   cursor: pointer;
+}
+
+.delivery {
+  justify-content: center;
 }
 
 .delivery .box {
@@ -66,9 +73,14 @@ input:focus {
 }
 
 .delivery .dest input {
-  width: 215px;
+  width: 200px;
   font-size: 13px;
   border: none;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 576px) {
@@ -78,9 +90,18 @@ input:focus {
 }
 
 @media (min-width: 892px) {
+  .delivery {
+    justify-content: flex-start;
+  }
+  .delivery .dest input {
+    width: 210px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1000px) {
   .delivery .dest input {
     width: 240px;
-    font-size: 16px;
   }
 }
 
