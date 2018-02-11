@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Uber Eats</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/stores.css">
+</head>
+
+<body>
+    <main>
+        <nav class="navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-5 col-sm-2 col-lg-3">
+                        <div class="flex">
+                            <div class="logo"></div>
+                        </div>
+                    </div>
+                    <div class="hidden-xs col-sm-6 col-lg-5">
+                        <div class="flex delivery">
+                            <div class="when btn">
+                                <span>ASAP</span>
+                            </div>
+                            <div class="to">
+                                to
+                            </div>
+                            <div class="flex dest">
+                                <div class="location">
+                                    <img src="./img/location.svg">
+                                </div>
+                                <input type="text" value="ul. Bolshaya Dmitrovka, 22">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-7 col-sm-4 col-lg-4">
+                        <div class="flex navbar-btns">
+                            <div class="btns">
+                                <div class="btn sign-in" tabindex="0">Sign In</div>
+                                <div class="btn register" tabindex="0">Register</div>
+                            </div>
+                            <div class="hidden-xs">
+                                <div class="basket">
+                                    <img src="./img/basket.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header id="search">
+            <div class="search">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="searchBox">
+                                <div class="icon">
+                                </div>
+                                <input type="text" placeholder="Search for restaurant or cuisine">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <div class="when">
+                                <div class="label">When</div>
+                                <div class="btn">
+                                    <span>ASAP</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-9">
+                            <div class="to">
+                                <div class="label">To</div>
+                                <div class="location">
+                                    <div class="icon">
+                                        <img src="./img/location.svg">
+                                    </div>
+                                    <input type="text" value="ul. Bolshaya Dmitrovka, 22">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </header>
+        <section id="restaurants">
+            <div class="restaurants">
+                <div class="header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h2>Moscow Restaurants</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                <div class="card">
+                                    <div class="photo" style="background-image: url('./img/food/mac.png');"></div>
+                                    <div class="info">
+                                        <p class="name">Макдоналдс — Газетный</p>
+                                        <div class="rest-info">
+                                            <span class="currency">₽₽</span>
+                                            <span class="divider">•</span>
+                                            <span class="food-kind">Бургеры</span>
+                                        </div>
+                                        <div class="delivery-time">
+                                            <span>25 - 35 Min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                <div class="card">
+                                    <div class="photo" style="background-image: url('./img/food/dim_co.png');"></div>
+                                    <div class="info">
+                                        <p class="name">DimSum &amp; Co — ЦДМ</p>
+                                        <div class="rest-info">
+                                            <span class="currency">₽</span>
+                                            <span class="divider">•</span>
+                                            <span class="food-kind">Японская • Китайская • Азиатская</span>
+                                        </div>
+                                        <div class="delivery-time">
+                                            <span>40 - 50 Min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                <div class="card">
+                                    <div class="photo" style="background-image: url('./img/food/engine.png');"></div>
+                                    <div class="info">
+                                        <p class="name">ДвижОК — Манежная</p>
+                                        <div class="rest-info">
+                                            <span class="currency">₽</span>
+                                            <span class="divider">•</span>
+                                            <span class="food-kind">Американская • Европейская</span>
+                                        </div>
+                                        <div class="delivery-time">
+                                            <span>35 - 45 Min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                <div class="card">
+                                    <div class="photo" style="background-image: url('./img/food/nha.png');"></div>
+                                    <div class="info">
+                                        <p class="name">НЯ — NHA</p>
+                                        <div class="rest-info">
+                                            <span class="currency">₽₽</span>
+                                            <span class="divider">•</span>
+                                            <span class="food-kind">Вьетнамская</span>
+                                        </div>
+                                        <div class="delivery-time">
+                                            <span>35 - 45 Min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                <div class="card">
+                                    <div class="photo" style="background-image: url('./img/food/dzi_point.png');"></div>
+                                    <div class="info">
+                                        <p class="name">Точка Дзы — Цветной</p>
+                                        <div class="rest-info">
+                                            <span class="currency">₽₽</span>
+                                            <span class="divider">•</span>
+                                            <span class="food-kind">Вьетнамская</span>
+                                        </div>
+                                        <div class="delivery-time">
+                                            <span>35 - 40 Min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                <div class="card">
+                                    <div class="photo" style="background-image: url('./img/food/cinnabon.png');"></div>
+                                    <div class="info">
+                                        <p class="name">Cinnabon</p>
+                                        <div class="rest-info">
+                                            <span class="currency">₽</span>
+                                            <span class="divider">•</span>
+                                            <span class="food-kind">Выпечка • Десерты • Капкейки</span>
+                                        </div>
+                                        <div class="delivery-time">
+                                            <span>25 - 35 Min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                <div class="card">
+                                    <div class="photo" style="background-image: url('./img/food/pizzelove.png');"></div>
+                                    <div class="info">
+                                        <p class="name">PIZZELOVE</p>
+                                        <div class="rest-info">
+                                            <span class="currency">₽₽</span>
+                                            <span class="divider">•</span>
+                                            <span class="food-kind">Пицца</span>
+                                        </div>
+                                        <div class="delivery-time">
+                                            <span>15 - 25 Min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                <div class="card">
+                                    <div class="photo" style="background-image: url('./img/food/zu_cafe.png');"></div>
+                                    <div class="info">
+                                        <p class="name">Zю кафе — Тверская</p>
+                                        <div class="rest-info">
+                                            <span class="currency">₽₽</span>
+                                            <span class="divider">•</span>
+                                            <span class="food-kind">Японская</span>
+                                        </div>
+                                        <div class="delivery-time">
+                                            <span>25 - 35 Min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                <div class="card">
+                                    <div class="photo" style="background-image: url('./img/food/bar_bq_cafe.png');"></div>
+                                    <div class="info">
+                                        <p class="name">Bar BQ Cafe — Манежная</p>
+                                        <div class="rest-info">
+                                            <span class="currency">₽₽₽</span>
+                                            <span class="divider">•</span>
+                                            <span class="food-kind">Европейская</span>
+                                        </div>
+                                        <div class="delivery-time">
+                                            <span>30 - 40 Min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="logo">
+                            <img src="./img/big_logo.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="divider"></div>
+                    </div>
+                </div>
+                <div class="links">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="language-selector">
+                                <div class="icon">
+                                    <img src="./img/world.svg">
+                                </div>
+                                <div class="language">
+                                    english
+                                </div>
+                                <div class="arrow">
+                                    <img src="./img/arrow-down.svg">
+                                </div>
+                            </div>
+                            <div class="social">
+                                <div class="tag">
+                                    <span class="hash">#</span>
+                                    <span>UberEats</span>
+                                </div>
+                                <div>
+                                    <div class="icon">
+                                        <img src="./img/facebook.svg">
+                                    </div>
+                                    <div class="icon">
+                                        <img src="./img/twitter.svg">
+                                    </div>
+                                    <div class="icon">
+                                        <img src="./img/instagram.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-1"></div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="option">
+                                <a href="">About UberEats</a>
+                            </div>
+                            <div class="option">
+                                <a href="">Become a Delivery Partner</a>
+                            </div>
+                            <div class="option">
+                                <a href="">Become a Restaurant Partner</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="option">
+                                <a href="">See all cities</a>
+                            </div>
+                            <div class="option">
+                                <a href="">Pricing</a>
+                            </div>
+                            <div class="option">
+                                <a href="">Help</a>
+                            </div>
+                            <div class="option">
+                                <a href="">FAQs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="divider"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="download">
+                            <div class="app-store">
+                                <img src="./img/app_store.svg">
+                            </div>
+                            <div class="google-play">
+                                <img src="./img/google_play.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="divider"></div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="option">
+                                <a href="">© 2017 Uber Technologies Inc.</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="option">
+                                <a href="">Privacy</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="option">
+                                <a href="">Terms</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </footer>
+        <div class="scroll-top-arrow"></div>
+    </main>
+</body>
+
+</html>
